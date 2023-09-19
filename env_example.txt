@@ -1,0 +1,11 @@
+TOKEN=your_discord_bot_token
+SecretKey=your_secret_key
+password=your_password
+username=your_username
+BOT_CLIENT_ID=discord_bot_client_id
+BOT_CLIENT_SECRET=discord_bot_client_secret
+APP_URL=https://locahost:port
+NEXT_PUBLIC_API_ENDPOINT=http://localhost:port
+guildId=yourserverid
+CALLBACK_URL,=YOUR_WEBSITE_URL/auth/discord/callback',
+
