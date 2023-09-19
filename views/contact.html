@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Discord Bot Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/48af5f9393.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
+</head>
+<body>
+    <div class="top-layout">
+        <div class="dropdown-container">
+            <!-- Dropdown menu 1 (Menu dropdown) -->
+            <div class="dropdown">
+                <button class="dropbtn">Menu <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="/homepage">Home</a>
+                    <a href="/about">About</a>
+                    <a href="/contact">Contact</a>
+                </div>
+            </div>
+            
+            <!-- Profile button on the right corner -->
+            <a href="/profile" class="profile-button"></a>
+        </div>
+    </div>
+
+    <div class="area">
+        <div class="circles">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <!-- Add more li elements for additional circles if needed -->
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <!-- Add your navigation links here -->
+        </nav>
+    </header>
+    <main class="center-content">
+        <h1>Contact Us</h1>
+        <p>Please fill out the form below to get in touch with us:</p>
+        <form class="contact-form" action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <div class="footer">
+        &copy; 2023 Officer Discord Bot | All rights reserved
+        <div class="social-links">
+            <!-- Add your social media links here -->
+        </div>
+        <div class="footer-links">
+            <a href="/terms-of-service">Terms of Service</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+        </div>
+    </div>
+  <script>
+    window.onload = function() {
+        // Check if a query parameter named "submitted" exists in the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('submitted')) {
+            alert('Data submitted successfully!');
+        }
+    };
+</script>
+</body>
+</html>

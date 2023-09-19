@@ -1,0 +1,71 @@
+{
+  "name": "AkaServices",
+  "version": "1.1.0",
+  "description": "A Multipurpose Discord Bot With A Dashboard With Styles And Fonts And Many Things.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TriggeredGamerX/AkaServices.git"
+  },
+  "keywords": [
+    "discord",
+    "generator",
+    "gen-bot",
+    "javascript"
+  ],
+  "author": "blázs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TriggeredGamerX/AkaServices/issues"
+  },
+  "homepage": "https://github.com/TriggeredGamerX/AkaServices#readme",
+  "dependencies": {
+    "@discordjs/builders": "^1.6.3",
+    "@discordjs/rest": "^2.0.0",
+    "archiver": "^5.3.1",
+    "ascii-table": "^0.0.9",
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cat-loggr": "^1.2.2",
+    "clipboardy": "^3.0.0",
+    "connect-sqlite3": "^0.9.13",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "dbd-soft-ui": "^1.7.15-beta.1",
+    "discord-api-types": "^0.37.51",
+    "discord-backup": "^3.3.2",
+    "discord-button-pages": "^1.1.9",
+    "discord-buttons": "^4.0.0-deprecated",
+    "discord-dashboard": "^2.3.62",
+    "discord-embeds-pages-buttons": "^1.3.0",
+    "discord-giveaway": "^1.1.5",
+    "discord.js": "^12.5.3",
+    "dotenv": "^16.1.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.4.1",
+    "fs": "0.0.1-security",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^7.5.1",
+    "ms": "^2.1.3",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^3.3.2",
+    "openai": "^3.3.0",
+    "os": "^0.1.1",
+    "passport": "^0.6.0",
+    "passport-discord": "^0.1.4",
+    "quick.db": "^9.1.7",
+    "sqlite3": "^5.1.6",
+    "string-progressbar": "^1.0.4",
+    "youtube-search": "^1.1.6",
+    "ytdl-core": "^4.11.5",
+    "ytsr": "^3.8.4"
+  }
+}

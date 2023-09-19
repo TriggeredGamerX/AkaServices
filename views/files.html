@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Your CSS styles here */
+        /* ... */
+
+    </style>
+</head>
+<body>
+    <h1>File Manager</h1>
+
+    <!-- Create File Form HTML -->
+    <h2>Create File</h2>
+    <form action="/create" method="post">
+        <label for="create-folder-select">Select Folder:</label>
+        <select id="create-folder-select" name="folder" required>
+            <option value="stock">Stock</option>
+            <option value="pstock">Pstock</option>
+        </select>
+        <div class="fancy-input">
+            <input id="create-file-name" type="text" name="fileName" placeholder="File Name" required>
+            <i class="fa fa-file" aria-hidden="true"></i>
+        </div>
+        <button class="fancy-button" type="submit">Create</button>
+    </form>
+
+    <!-- Rename File Form HTML -->
+    <h2>Rename File</h2>
+    <form action="/rename" method="post">
+        <label for="rename-folder-select">Select Folder:</label>
+        <select id="rename-folder-select" name="folder" required>
+            <option value="stock">Stock</option>
+            <option value="pstock">Pstock</option>
+        </select>
+        <div class="fancy-input">
+            <input id="old-file-name" type="text" name="oldFileName" placeholder="Current File Name" required>
+            <i class="fa fa-file" aria-hidden="true"></i>
+        </div>
+        <div class="fancy-input">
+            <input id="new-file-name" type="text" name="newFileName" placeholder="New File Name" required>
+            <i class="fa fa-file" aria-hidden="true"></i>
+        </div>
+        <button class="fancy-button" type="submit">Rename</button>
+    </form>
+
+    <!-- Delete File Form HTML -->
+    <h2>Delete File</h2>
+    <form action="/delete" method="post">
+        <label for="delete-folder-select">Select Folder:</label>
+        <select id="delete-folder-select" name="folder" required>
+            <option value="stock">Stock</option>
+            <option value="pstock">Pstock</option>
+        </select>
+        <div class="fancy-input">
+            <input id="delete-file-name" type="text" name="fileName" placeholder="File Name" required>
+            <i class="fa fa-file" aria-hidden="true"></i>
+        </div>
+        <button class="fancy-button" type="submit">Delete</button>
+    </form>
+
+    <!-- Edit File Form HTML -->
+    <h2>Edit File</h2>
+    <form action="/save/:folder/:filename" method="post">
+        <textarea name="content" placeholder="File Content" required></textarea>
+        <button class="fancy-button" type="submit">Save</button>
+    </form>
+
+    <!-- Your other HTML content here -->
+    <!-- ... -->
+
+</body>
+</html>

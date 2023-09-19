@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Style for the avatar image */
+        img.avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        /* Style for the top layout */
+        .top-layout {
+            background-color: #2e2e2d;
+            padding: 10px 30; /* Adjust padding */
+            display: flex;
+            justify-content: space-between; /* Align items to the right */
+            align-items: center;
+            margin-bottom: 10px; /* Reduce the gap between top layout and content */
+        }
+
+        /* Style for the "What's my Discord ID" button */
+        .top-button {
+            background-color: #7289da;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 10px; /* Adjust the border radius */
+            margin-right: 10px; /* Add some spacing between buttons */
+            transition: background-color 0.3s ease; /* Button color change animation */
+        }
+
+        .top-button:hover {
+            background-color: #677bc4; /* Hover color */
+        }
+
+        /* Style for the Discord ID content */
+        .discord-id-content {
+            display: none;
+            background-color: #2e2e2d;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Style for the copy button */
+        .copy-button {
+            background-color: #7289da;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .copy-button:hover {
+            background-color: #677bc4; /* Hover color */
+        }
+
+        /* Style for the button container */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap; /* Wrap to the next line if needed */
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+
+        /* Style for individual buttons in the container */
+        .tool-button {
+            background-color: #7289da;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 10px; /* Adjust the border radius */
+            margin: 0 0 20px 0; /* Add spacing between buttons and wrap to the next line */
+            transition: background-color 0.3s ease; /* Button color change animation */
+            width: calc(50% - 10px); /* Set the width to 50% with spacing */
+        }
+
+        .tool-button:hover {
+            background-color: #677bc4; /* Hover color */
+        }
+
+        /* Style for the dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2e2e2d;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+        .dropdown-content p {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-layout">
+        <!-- Button to go back to the previous page -->
+        <a href="javascript:history.go(-1);" class="top-button">Back to Previous Page</a>
+        <!-- Button for logout in top-right corner -->
+        <a href="/logout" class="top-button">Logout</a>
+    </div>
+    <h1>Your Profile</h1>
+    <p>Username: <%= user.username %></p>
+    <!-- Ensure that the 'user.discordAvatar' variable contains the correct URL -->
+    <img src="<%= user.discordAvatar %>" alt="Avatar" class="avatar">
+    <!-- Discord ID content -->
+    <div class="discord-id-content" id="discord-id-content">
+        <p>Your Discord ID: <span id="user-discord-id"><%= user.discordId %></span></p>
+        <button id="copy-button" class="copy-button">Copy</button>
+    </div>
+    <!-- Messages -->
+    <div>
+        <h1>Helpful Tools</h1>
+    </div>
+    <!-- Button container for tools -->
+    <div class="button-container">
+        <div class="tool-button dropdown" id="show-discord-id">
+            What is my Discord ID
+            <div class="dropdown-content">
+                <p>Your Discord ID: <%= user.discordId %></p>
+            </div>
+        </div>
+        <a href="#" class="tool-button">Tool 1</a>
+        <a href="#" class="tool-button">Tool 2</a>
+        <a href="#" class="tool-button">Tool 3</a>
+        <a href="#" class="tool-button">Tool 4</a>
+        <a href="#" class="tool-button">Tool 5</a>
+        <a href="#" class="tool-button">Tool 6</a>
+    </div>
+
+    <script>
+        // JavaScript to handle copying Discord ID to clipboard and showing the alert
+        const copyButton = document.getElementById('copy-button');
+        const userDiscordId = document.getElementById('user-discord-id');
+
+        copyButton.addEventListener('click', () => {
+            const textArea = document.createElement('textarea');
+            textArea.value = userDiscordId.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('Discord ID copied to clipboard!');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    position: relative; /* Needed for absolute positioning of circles */
+    overflow: hidden; /* Hide overflowing circles */
+}
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 36px; /* Adjusted font size for the heading */
+    margin-bottom: 20px; /* Add some spacing between elements */
+    font-weight: bold; /* Make the heading bold */
+}
+
+.page-content {
+    font-size: 18px; /* Adjust font size for the page content */
+    margin-bottom: 20px; /* Add spacing below the page content */
+}
+
+.login-button {
+    display: inline-block;
+    background-color: #7289DA; /* Discord-style button color */
+    color: #fff;
+    z-index: 1;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px; /* Adjust font size for the button */
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+.login-button:hover {
+    background-color: #5563D1; /* Change the background color on hover */
+}
+
+/* Styles for circles */
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Added z-index to make the circles clickable */
+    pointer-events: none;
+}
+
+.circles ul {
+    list-style: none;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    z-index: 2; /* Added z-index to make the circles clickable */
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+/* Add styles for other circles similarly */
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #5f54c8;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* Style for the contact form */
+/* Your existing CSS styles here */
+
+/* Style for the contact form */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #000; /* Set label text color to black */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Set input and textarea background color to white */
+}
+
+.contact-form button {
+    background-color: #7289DA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #5563D1;
+}
+
+/* Style for footer links */
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Add spacing between links */
+}
+
+/* Style for dropdown menus */
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    margin-right: 10px;
+}
+
+.dropbtn {
+    background-color: #7289da;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    z-index: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #677bc4;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #7289da;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #677bc4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Style for the profile button */
+.profile-button {
+    background-color: #7289da;
+    border-radius: 50%; /* Make it circular */
+    width: 40px; /* Set the width and height */
+    height: 40px;
+    z-index: 2;
+    display: inline-block;
+    margin-left: auto; /* Push it to the right corner */
+    cursor: pointer; /* Add a pointer cursor for clickability */
+    transition: background-color 0.3s ease; /* Add a hover effect */
+    background-image: url('https://cdn-icons-png.flaticon.com/512/6596/6596121.png'); /* Default avatar URL */
+    background-size: cover;
+    background-position: center;
+}
+.user-avatar {
+    width: 100px; /* Adjust the width and height as needed */
+    height: 100px;
+    border-radius: 50%; /* Makes it round for profile pictures */
+    background-size: cover;
+    background-position: center;
+}
+.profile-button:hover {
+    background-color: #677bc4; /* Change the background color on hover */
+}
+/* Hover color */
+        /* Add CSS styles for social links */
+        .social-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; /* Adjust the spacing between links */
+        }
+
+        .social-link img {
+            width: 30px; /* Adjust the image size as needed */
+            height: 30px; /* Add height to the image */
+            margin-right: 10px; /* Add spacing between image and text */
+        }
+
+        .social-link a {
+            text-decoration: none;
+            color: #fff; /* Adjust the link color as needed */
+            font-size: 18px; /* Adjust the font size as needed */
+            display: inline-block;
+        }
+
+.social-link a:hover {
+    background-color: #677bc4; /* Change the background color on hover */
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #7289da;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px; /* Adjust the border radius */
+    left: 0; /* Align to the left */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+    text-align: left; /* Align menu items to the left */
+}
+
+.dropdown-content a:hover {
+    background-color: #677bc4;
+}
+/* File Manager styles */
+.filemanager {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Label styles within the File Manager */
+.filemanager label {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Input styles within the File Manager */
+.filemanager input[type="text"],
+.filemanager input[type="email"],
+.filemanager textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Button styles within the File Manager */
+.filemanager button {
+    background-color: #7289DA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filemanager button:hover {
+    background-color: #5563D1;
+}
