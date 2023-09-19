@@ -38,7 +38,7 @@ We welcome contributions to improve and enhance our bot. Feel free to contribute
 
 ## Issues
 
-If you encounter any issues or have suggestions, please open an issue on our [GitHub repository](insert_github_link_here) to help us improve the bot.
+If you encounter any issues or have suggestions, please open an issue on our [AkaServices](https://github.com/TriggeredGamerX/AkaServices/issues)) to help us improve the bot.
 
 ---
 
