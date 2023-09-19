@@ -29,6 +29,11 @@
 - ![Premium Commands](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/5.PNG)
 
 - **Dashboard Showcase with User Login Support**: Explore and customize bot settings through our user-friendly dashboard with secure user login support.
+  [Login Page](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/7.PNG)
+  [Homepage](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/8.PNG)
+  [Contact](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/9.PNG)
+  [About](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/10.PNG)
+  [Profile](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/11.PNG)
 
 ## Contribute
 
