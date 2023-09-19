@@ -9,6 +9,7 @@ const app = express();
 const fs = require('fs'); // Import the fs module
 const errorHandler = require('./scripts/handler'); // Adjust the path as needed
 const multer = require('multer');
+require('dotenv').config();
 
 // Initialize SQLite database
 // Redirect stdout and stderr to a file (e.g., logs.txt)
@@ -73,7 +74,7 @@ passport.use(
     {
       clientID: '1150810541586137089', // Replace with your Discord OAuth2 client ID
       clientSecret: 'dcbMSv-bAABBWYSw9K8tmmYHa0MLgOsJ', // Replace with your Discord OAuth2 client secret
-      callbackURL: 'https://offier-discord-bot.thedeveloperhub.repl.co/auth/discord/callback', // Replace with your callback URL
+      callbackURL: process.env.CALLBACK_URL,
       scope: ['identify'],
     },
     (accessToken, refreshToken, profile, done) => {
