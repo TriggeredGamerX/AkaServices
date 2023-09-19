@@ -47,6 +47,13 @@ Explore and customize bot settings through our user-friendly dashboard with secu
 ![Contact](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/9.PNG)
 ![About](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/10.PNG)
 ![Profile](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/11.PNG)
+## Issues Or Enhancement
+
+If you encounter any issues or have suggestions, please open an issue on our [AkaServices](https://github.com/TriggeredGamerX/AkaServices/issues)) to help us improve the bot.
+
+---
+
+Thank you for using AkaServices Discord Bot! We hope you enjoy its features and find it valuable for your server. If you have any questions or need assistance, please feel free to reach out.
 
 ## Setup and Contribution
 
@@ -75,10 +82,3 @@ APP_URL=https://locahost:port
 NEXT_PUBLIC_API_ENDPOINT=http://localhost:port
 guildId=yourserverid
 CALLBACK_URL,=YOUR_WEBSITE_URL/auth/discord/callback',
-## Issues Or Enhancement
-
-If you encounter any issues or have suggestions, please open an issue on our [AkaServices](https://github.com/TriggeredGamerX/AkaServices/issues)) to help us improve the bot.
-
----
-
-Thank you for using AkaServices Discord Bot! We hope you enjoy its features and find it valuable for your server. If you have any questions or need assistance, please feel free to reach out.
