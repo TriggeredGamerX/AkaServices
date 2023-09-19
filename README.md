@@ -1,6 +1,6 @@
 # AkaServices Discord Bot
 
-![AkaServices](./images/6.png)
+![Made With Replit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQph7AlKMAy4fM5Xos_W-7I-4frFeKlFcdlWNEGVd3IA3FPFyrLXA73_b_0k47nK3fi2HM&usqp=CAU)
 
 ## Features
 
