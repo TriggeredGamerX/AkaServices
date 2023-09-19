@@ -16,15 +16,17 @@
 ## Commands Showcase
 
 - **Moderation Commands**:
-  ![Moderation Commands](image_here)
+  ![Moderation Commands](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/3.PNG)
 - **Economy Commands**:
-  ![Economy Commands](image_here)
+  ![Economy Commands](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/2.PNG)
 - **User Commands**:
-  ![User Commands](https://ibb.co/16JS2SV)
+  ![User Commands](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/1.PNG)
 - **Misc Commands**:
-  ![Misc Commands](image_here)
+  ![Misc Commands](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/6.PNG)
 - **Stocker Commands**:
-  ![Stocker Commands](image_here)
+  ![Stocker Commands](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/4.PNG)
+- **Premium Commands**:
+- ![Premium Commands](https://github.com/TriggeredGamerX/AkaServices/blob/main/images/5.PNG)
 
 - **Dashboard Showcase with User Login Support**: Explore and customize bot settings through our user-friendly dashboard with secure user login support.
 
